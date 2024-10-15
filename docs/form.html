@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Member Toko Kosmetik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Pendaftaran Member Toko Kosmetik</h1>
+        <form action="index.html" method="POST"> 
+            <fieldset>
+                <legend>Informasi Member</legend>
+                <table>
+                    <tr>
+                        <td><label for="fullname">Nama Lengkap:</label></td>
+                        <td><input type="text" id="fullname" name="fullname" required pattern="[A-Za-z\s]+" title="Hanya huruf dan spasi yang diperbolehkan"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="email@example.com" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Nomor Telepon:</label></td>
+                        <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10,12}" required title="Masukkan nomor telepon antara 10-12 angka"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Alamat:</label></td>
+                        <td><textarea id="address" name="address" rows="4" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="birthdate">Tanggal Lahir:</label></td>
+                        <td><input type="date" id="birthdate" name="birthdate" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Jenis Kelamin:</label></td>
+                        <td class="gender-group">
+                            <div class="gender-container">
+                                <input type="radio" id="female" name="gender" value="female" required>
+                                <label for="female">Female</label>
+                            </div>
+                            <div class="gender-container">
+                                <input type="radio" id="male" name="gender" value="male" required>
+                                <label for="male">Male</label>
+                            </div>
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td><label for="favorite-product">Produk Favorit:</label></td>
+                        <td><input type="text" id="favorite-product" name="favorite-product" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="username">Username:</label></td>
+                        <td><input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,}" title="Minimal 5 karakter huruf atau angka"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" required pattern=".{6,}" title="Minimal 6 karakter"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="zipcode">Kode Pos:</label></td>
+                        <td><input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" required title="Masukkan 5 digit angka"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button type="submit">Daftar</button>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif; 
+    background-image: url('asset/home.jpg');
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+@font-face {
+    font-family: 'Fancake';
+    src: url('font/Fancake.otf') format('truetype');
+}
+header h1 {
+    font-family: 'Fancake', sans-serif;
+    color: #e91e63;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+@font-face {
+    font-family: 'CaviarDreams_Bold';
+    src: url('font/CaviarDreams_Bold.ttf') format('truetype');
+}
+header p {
+    font-family: 'CaviarDreams_Bold', sans-serif; 
+    font-size: 1.2em;
+    color: #555;
+}
+
+.intro {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.intro p {
+    font-family: 'Fancake', sans-serif; 
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #e91e63;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d81b60;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8bbd0;
+    color: #333;
+}
